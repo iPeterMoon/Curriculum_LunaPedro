@@ -4,6 +4,7 @@
     --font-color: #0B0317;
     --background-color: #F1E8FC;
     --nav-background-color: #1F0840;
+    --highlight: #35BE13;
 }
 
 body {
@@ -11,8 +12,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
 }
 
+main{
+    flex: 1;
+}
 nav {
     background-color: var(--nav-background-color);
     color: #fff;
@@ -20,7 +27,6 @@ nav {
     text-align: right;
     position: sticky;
     top: 0;
-    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content:space-between
@@ -46,7 +52,7 @@ nav ul li {
     font-weight: 600;
 }
 
-nav ul li a {
+nav  a {
     color: white;
     text-decoration: none;
 }
@@ -110,4 +116,39 @@ footer {
     color: white;
     position: relative;
     bottom: 0;
+}
+
+.titulo{
+    font-size: 2em;
+    margin: 20px;
+    color: var(--font-color);
+    text-align: center;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--primary-color);
+}
+em {
+    color: var(--highlight);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
 }
