@@ -1,11 +1,4 @@
-:root{
-    --primary-color: #471291;
-    --secondary-color: #6CED4C;
-    --font-color: #0B0317;
-    --background-color: #F1E8FC;
-    --nav-background-color: #1F0840;
-    --highlight: #35BE13;
-}
+@import './global.css';
 
 body {
     font-family: Arial, sans-serif;
